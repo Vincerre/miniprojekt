@@ -7,8 +7,8 @@ $font-logo:'Island Moments', cursive;
 $color1: #ffd32a;
 $color2: #f5f6fa;
 $color3: #dcdde1;
-$light-text: rgb(128, 126, 126);
-$color-text: #000000;
+$light-text: rgb(175, 173, 173);
+$color-text: black;
 
 /* Global */
 
@@ -130,7 +130,7 @@ header a:hover {
 
 .page-subtitle {
   font-family: $font-header2;
-  font-size: 150px;
+  font-size: 130px;
   text-transform: uppercase;
 }
 
@@ -144,4 +144,57 @@ header a:hover {
   border-radius: 5px;
   font-size: 24px;
   padding: 24px 72px;
+}
+
+/* services */
+.services .container {
+  text-align: center;
+  margin: 0 10rem;
+}
+
+.services .section-title {
+  margin: 10rem 0;
+}
+
+.services h1 {
+  font-family: $font-header2;
+  font-size: 48px;
+}
+
+.services h2 {
+  font-family: $font-header2;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.services .section-title p {
+  font-size: 20px;
+  color: $light-text;
+  font-weight: bold;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper div {
+  padding: 0 5rem 10rem 5rem;
+}
+
+.services i {
+  line-height: 1.3;
+  margin-bottom: 40px;
+  width: 115px;
+  height: 115px;
+  padding: 15px;
+  font-size: 60px;
+  color:#ffd32a;
+  border: 5px solid $color1;
+  border-radius: 50%;
+}
+
+.services-wrapper p {
+  color: $light-text;
 }
