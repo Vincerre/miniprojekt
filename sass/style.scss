@@ -1,0 +1,147 @@
+/* Variables */
+
+$font-header1: 'Dosis', sans-serif;
+$font-header2:'Open Sans', sans-serif;
+$font-text:'Rubik', sans-serif;
+$font-logo:'Island Moments', cursive;
+$color1: #ffd32a;
+$color2: #f5f6fa;
+$color3: #dcdde1;
+$light-text: rgb(128, 126, 126);
+$color-text: #000000;
+
+/* Global */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.7;
+  font-family: $font-text;
+  color: $color-text;
+}
+
+
+/* navigation */
+
+.logo {
+  position: absolute;
+  margin-LEFT: 20%;
+  font-family: $font-logo;
+  color: #ffd32a;
+  font-size: 80px;
+  line-height: 1;
+}
+
+nav {
+  font-family: $font-header1;
+  font-size: 30px;
+  padding: 25px;
+  text-align: -webkit-right;
+  margin-right: 15%;
+}
+
+.navigation ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation li {
+  display: inline-block;    
+  position: relative;
+  margin-right: 36px;
+  padding: 10px;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: white;
+  width: 100%;
+}
+
+.navigation li ul {
+  padding: 0;
+  position: absolute;
+  text-align: center;
+  background-color: $color3;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+  display: none;
+}
+
+.navigation ul ul li {
+  display: block;
+  margin-bottom: 12px;
+  margin: 0;
+}
+
+.navigation li li a {
+  color: $color-text;
+  display: block;
+  padding: 0 24px;
+}
+
+header a:hover {
+  color: $color1;    
+}
+
+.navigation li:hover ul {
+  display: block;
+}
+
+.navigation li li:hover {
+  background-color: $color1;
+  border-radius: 5px;
+}
+
+/* splash */
+
+.splash {
+  height: 100vh;
+  position: relative;
+  background-image: url("https://images.pexels.com/photos/1319459/pexels-photo-1319459.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.splash-inner {
+  color: #f5f6fa;
+  position: absolute;
+  width: 100%;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.page-title {
+  font-family: $font-header1;
+  font-weight: 200;
+  font-size: 80px;
+}
+
+.page-subtitle {
+  font-family: $font-header2;
+  font-size: 150px;
+  text-transform: uppercase;
+}
+
+.btn {
+  margin-top: 20px;
+  font-family: $font-header2;
+  font-weight: bold;
+  color: #f5f6fa;
+  background-color: #ffd32a;
+  border: none;
+  border-radius: 5px;
+  font-size: 24px;
+  padding: 24px 72px;
+}
