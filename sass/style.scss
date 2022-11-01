@@ -134,7 +134,7 @@ header a:hover {
   text-transform: uppercase;
 }
 
-.btn {
+.splash .btn {
   margin-top: 20px;
   font-family: $font-header2;
   font-weight: bold;
@@ -144,9 +144,17 @@ header a:hover {
   border-radius: 5px;
   font-size: 24px;
   padding: 24px 72px;
+  transition: all 1s;
+}
+
+.splash .btn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 1s;
 }
 
 /* services */
+
 .services .container {
   text-align: center;
   margin: 0 10rem;
@@ -174,12 +182,12 @@ header a:hover {
   font-weight: bold;
 }
 
-.wrapper {
+.services-wrapper {
   display: flex;
   justify-content: space-between;
 }
 
-.wrapper div {
+.services-wrapper div {
   padding: 0 5rem 10rem 5rem;
 }
 
@@ -197,4 +205,72 @@ header a:hover {
 
 .services-wrapper p {
   color: $light-text;
+}
+
+/* portfolio */
+
+.portfolio{
+  background-color: $color3;
+  padding-bottom: 5rem;
+}
+
+.portfolio .container {
+  text-align: center;
+  margin: 0 10rem;
+}
+
+.portfolio h1 {
+  font-family: $font-header2;
+  font-size: 48px;
+}
+
+.portfolio .section-title {
+  padding: 10rem 0;
+}
+
+.portfolio .section-title p {
+  font-size: 20px;
+  color: $light-text;
+  font-weight: bold;
+}
+
+.portfolio-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+img {
+  max-width: 300px;
+  max-height: 500px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.portfolio-wrapper div {
+  transition: all 1s;
+  background-color: $color2;
+}
+
+.portfolio-wrapper .description {
+  line-height: 1.2;
+  padding: 10px 0;
+  font-family: $font-text;
+  color: $light-text;
+}
+
+.portfolio-wrapper .description h2 {
+  font-size: 22px;
+  color: black;
+  font-family: $font-header2;
+  font-weight: 100;
+}
+
+.portfolio-wrapper > div:hover {
+  transform: scale(1.1);
+  transition: all 1s;
+  cursor: pointer;
 }
